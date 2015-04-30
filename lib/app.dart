@@ -12,19 +12,15 @@ class _App {
   StreamController _windowAllClosedCtrl = new StreamController.broadcast(sync: true);
 
   _App() {
-    print('app');
     _app.callMethod('on', ['window-all-closed', (event) {
       _windowAllClosedCtrl.add(event);
     }]);
     _app.callMethod('on', ['ready', (event) {
-      print('ready $event');
       _readyCtrl.add(event);
-//      if (onReadyFn != null) onReadyFn(event);
     }]);
   }
 
   Stream get onReady => _readyCtrl.stream;
-//  Function onReadyFn;
   Stream get onWindowAllClosed => _windowAllClosedCtrl.stream;
 
   void quit() {
