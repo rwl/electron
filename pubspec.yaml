@@ -1,5 +1,5 @@
 name: electron
-version: 0.0.1
+version: 0.0.2
 author: Richard Lincoln <r.w.lincoln@gmail.com>
 description: A Dart library for Electron desktop apps
 homepage: https://github.com/rwl/electron
