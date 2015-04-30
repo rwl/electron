@@ -1,4 +1,7 @@
 name: electron
 version: 0.0.1
+author: Richard Lincoln <r.w.lincoln@gmail.com>
+description: A Dart library for Electron desktop apps
+homepage: https://github.com/rwl/electron
 dependencies:
-  barback: any
+  barback: '>=0.15.2+4 <0.16.0'
